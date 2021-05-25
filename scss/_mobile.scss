@@ -1,0 +1,314 @@
+@media (max-width: 80rem) {
+  .showcase {
+    padding: 3rem;
+
+    &-img {
+      img {
+        max-width: 25rem;
+        transform: translate(1%, -23%);
+      }
+    }
+
+    &-text {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding-right: 4rem;
+      }
+    }
+  }
+
+  .about {
+    &-content {
+      div {
+        p {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 65rem) {
+  .scroll-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(#ff8f70, #ff3d54);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85rem;
+    padding: 2rem 1rem 2rem 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
+    .logo {
+      img {
+        transform: translateY(10%);
+      }
+    }
+
+    &.show {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+
+  .mobile-menu {
+    .btn {
+      font-weight: 300;
+    }
+  }
+
+  .scroll-navbar {
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  #header {
+    .navbar {
+      padding: 2rem 1rem 2rem 2rem;
+
+      .toggle-btn {
+        display: block;
+      }
+
+      .navbar-left {
+        .nav {
+          display: none;
+        }
+      }
+
+      &-actions {
+        display: none;
+      }
+    }
+
+    .hero {
+      .title {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .design {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    background: none;
+    margin-top: 4rem;
+
+    &-title {
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      transform: translate(-50%, -40%);
+    }
+
+    &-img {
+      display: block;
+      margin-top: 6rem;
+      max-width: 100%;
+    }
+
+    &-content {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 0 6rem;
+
+      .design-text {
+        padding: 0;
+
+        h2:first-of-type {
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+
+  .showcase {
+    flex-direction: column;
+    background: url('../images/bg-pattern-circles.svg') no-repeat center -20rem/100%,
+      linear-gradient(90deg, #2c2d3f, #3f4164);
+    margin-top: 18rem;
+    padding: 3rem 0;
+
+    &-img {
+      display: flex;
+      justify-content: center;
+      transform: translateY(-55%);
+
+      img {
+        position: relative;
+        max-width: 30rem;
+        transform: none;
+      }
+    }
+
+    &-text {
+      text-align: center;
+      margin: -18rem 0 3rem;
+
+      p {
+        padding: 0 10rem;
+      }
+    }
+  }
+
+  .about {
+    flex-direction: column;
+    min-height: auto;
+    background: none;
+    margin-bottom: 5rem;
+
+    &-img {
+      display: block;
+      max-width: 100%;
+    }
+
+    &-left {
+      display: none;
+    }
+
+    &-content {
+      margin: 3rem 0 0;
+      padding: 0 6rem;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    &-logo-mobile {
+      display: flex;
+      justify-content: center;
+      padding-top: 4rem;
+    }
+    &-content {
+      grid-template-columns: repeat(3, 1fr);
+      margin: 4rem 0;
+      padding: 0;
+
+      .logo {
+        display: none;
+      }
+
+      .navigation {
+        margin: 0 auto;
+        padding: 0;
+      }
+    }
+
+    .attribution {
+      padding: 0 0 1rem;
+    }
+  }
+}
+
+@media (max-width: 48rem) {
+  #header {
+    .hero {
+      text-align: center;
+      padding-top: 5rem;
+
+      .title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        padding: 0 2rem;
+      }
+
+      &-actions {
+        margin: 2rem 0 0;
+
+        .hero-btn {
+          margin: 0 0.25rem;
+        }
+      }
+    }
+  }
+
+  .design {
+    &-title {
+      font-size: 1.7rem;
+    }
+    &-content {
+      padding: 0 2rem;
+    }
+  }
+
+  .showcase {
+    background: url('../images/bg-pattern-circles.svg') no-repeat center -15rem / 38rem,
+      linear-gradient(90deg, #2c2d3f, #3f4164);
+    margin-top: 12rem;
+
+    &-img {
+      img {
+        max-width: 20rem;
+      }
+    }
+
+    &-text {
+      margin: -12rem 0 3rem;
+
+      h2 {
+        padding: 0 1rem;
+      }
+
+      p {
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  .about {
+    &-content {
+      padding: 0 2rem;
+    }
+  }
+
+  .footer {
+    &-logo-mobile {
+      display: none;
+    }
+
+    &-content {
+      grid-template-columns: 1fr;
+      margin: 0;
+      padding: 4rem 0;
+
+      .logo {
+        display: list-item;
+        text-align: center;
+        padding: 0;
+      }
+
+      .navigation {
+        text-align: center;
+        margin: 1.5rem auto;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        li:first-of-type {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .attribution {
+      padding: 0 1rem 1rem;
+    }
+  }
+}
